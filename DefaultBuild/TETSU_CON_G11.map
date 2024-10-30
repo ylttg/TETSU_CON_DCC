@@ -1,0 +1,618 @@
+Renesas Optimizing Linker (W3.06.00 )             11-Aug-2024 20:05:21
+
+*** Options ***
+
+-subcommand=DefaultBuild\TETSU_CON_G11.clnk
+-Input=DefaultBuild\cstart.obj
+-Input=DefaultBuild\stkinit.obj
+-Input=DefaultBuild\r_cg_main.obj
+-Input=DefaultBuild\r_cg_systeminit.obj
+-Input=DefaultBuild\r_cg_cgc.obj
+-Input=DefaultBuild\r_cg_cgc_user.obj
+-Input=DefaultBuild\r_cg_port.obj
+-Input=DefaultBuild\r_cg_port_user.obj
+-Input=DefaultBuild\r_cg_wdt.obj
+-Input=DefaultBuild\r_cg_wdt_user.obj
+-Input=DefaultBuild\r_cg_sau.obj
+-Input=DefaultBuild\r_cg_sau_user.obj
+-Input=DefaultBuild\r_cg_adc.obj
+-Input=DefaultBuild\r_cg_adc_user.obj
+-Input=DefaultBuild\r_cg_it8bit.obj
+-Input=DefaultBuild\r_cg_it8bit_user.obj
+-Input=DefaultBuild\r_cg_tmkb.obj
+-Input=DefaultBuild\r_cg_tmkb_user.obj
+-Input=DefaultBuild\r_cg_dac.obj
+-Input=DefaultBuild\r_cg_dac_user.obj
+-Input=DefaultBuild\r_cg_pga.obj
+-Input=DefaultBuild\r_cg_pga_user.obj
+-Input=DefaultBuild\r_cg_comp.obj
+-Input=DefaultBuild\r_cg_comp_user.obj
+-Input=DefaultBuild\TETSU_CON_G11_user.obj
+-Input=DefaultBuild\r_cg_dtc.obj
+-Input=DefaultBuild\r_cg_dtc_user.obj
+-SECURITY_ID=00000000000000000000
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F1056A.DVF
+-DEBug
+-NOCOmpress
+-NOOPtimize
+-OUtput=DefaultBuild\TETSU_CON_G11.abs
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\lib\rl78em4s.lib
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\lib\malloc_n.lib
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\lib\rl78em4r.lib
+-OCDBG=84
+-DEBUG_MONITOR=3E00-3FFF
+-USER_OPT_BYTE=FE57F0
+-LISt=DefaultBuild\TETSU_CON_G11.map
+-SHow=SYmbol,Total_size
+-STARt=.const,.text,.RLIB,.SLIB,.textf,.constf,.data,.sdata/02000,.dataR,.bss/FFA00,.sdataR,.sbss/FFE20
+-ROm=.data=.dataR
+-ROm=.sdata=.sdataR
+-NOMessage
+-MEMory=High
+-NOLOgo
+-end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+.vect
+                                  00000000  0000007f        80   0
+.option_byte
+                                  000000c0  000000c3         4   1
+.security_id
+                                  000000c4  000000cd         a   1
+.monitor1
+                                  000000ce  000000d7         a   1
+.const
+                                  00002000  00002051        52   2
+.text
+                                  00002052  00002474       423   1
+.RLIB
+                                  00002475  00002484        10   1
+.SLIB
+                                  00002485  00002485         0   1
+.textf
+                                  00002485  0000312e       caa   1
+.constf
+                                  00003130  00003130         0   2
+.data
+                                  00003130  0000313e         f   2
+.sdata
+                                  00003140  00003140         0   2
+.monitor2
+                                  00003e00  00003fff       200   1
+.dataR
+                                  000ffa00  000ffa0e         f   2
+.bss
+                                  000ffa10  000ffa37        28   2
+.bss_ATFFB00
+                                  000ffb00  000ffbef        f0   1
+.bss_ATFFC00
+                                  000ffc00  000ffcef        f0   1
+.bss_ATFFCF0
+                                  000ffcf0  000ffcf0         1   1
+.bss_ATFFD00
+                                  000ffd00  000ffd27        28   1
+.bss_ATFFD40
+                                  000ffd40  000ffd47         8   1
+.bss_ATFFD48
+                                  000ffd48  000ffd4f         8   1
+.bss_ATFFD50
+                                  000ffd50  000ffd57         8   1
+.bss_ATFFD58
+                                  000ffd58  000ffd5f         8   1
+.bss_ATFFD60
+                                  000ffd60  000ffd67         8   1
+.sdataR
+                                  000ffe20  000ffe20         0   2
+.sbss
+                                  000ffe20  000ffe20         0   2
+
+*** Total Section Size ***
+
+RAMDATA SECTION:  00000268 Byte(s)
+ROMDATA SECTION:  000002f9 Byte(s)
+PROGRAM SECTION:  000010dd Byte(s)
+
+*** Symbol List ***
+
+SECTION=
+FILE=                               START        END    SIZE
+  SYMBOL                            ADDR        SIZE    INFO      COUNTS  OPT
+
+SECTION=.vect
+FILE=rlink_generates_04
+                                  00000000  0000007f        80
+
+SECTION=.option_byte
+FILE=rlink_generates_01
+                                  000000c0  000000c3         4
+
+SECTION=.security_id
+FILE=rlink_generates_03
+                                  000000c4  000000cd         a
+
+SECTION=.monitor1
+FILE=rlink_generates_02
+                                  000000ce  000000d7         a
+
+SECTION=.const
+FILE=DefaultBuild\r_cg_tmkb_user.obj
+                                  00002000  00002011        12
+FILE=DefaultBuild\TETSU_CON_G11_user.obj
+                                  00002012  00002051        40
+  _ACC_BRK_LEVEL
+                                  00002012        20   data ,g         * 
+
+SECTION=.text
+FILE=DefaultBuild\cstart.obj
+                                  00002052  000020ab        5a
+  _start
+                                  00002052         0   none ,g         * 
+  _exit
+                                  000020aa         0   none ,g         * 
+FILE=DefaultBuild\r_cg_wdt_user.obj
+                                  000020ac  000020ad         2
+  _r_wdt_interrupt@1
+                                  000020ac         2   func ,l         * 
+FILE=DefaultBuild\r_cg_sau_user.obj
+                                  000020ae  0000215f        b2
+  _r_uart1_interrupt_receive@1
+                                  000020ae        79   func ,l         * 
+  _r_uart1_interrupt_send@1
+                                  00002127        39   func ,l         * 
+FILE=DefaultBuild\r_cg_adc_user.obj
+                                  00002160  00002161         2
+  _r_adc_interrupt@1
+                                  00002160         2   func ,l         * 
+FILE=DefaultBuild\r_cg_it8bit_user.obj
+                                  00002162  000022e8       187
+  _r_it8bit0_channel0_interrupt@1
+                                  00002162       187   func ,l         * 
+FILE=DefaultBuild\r_cg_tmkb_user.obj
+                                  000022e9  00002472       18a
+  _r_tmr_kb0_interrupt@1
+                                  000022e9       18a   func ,l         * 
+FILE=DefaultBuild\r_cg_comp_user.obj
+                                  00002473  00002474         2
+  _r_comp0_interrupt@1
+                                  00002473         2   func ,l         * 
+
+SECTION=.RLIB
+FILE=memcpy
+                                  00002475  00002484        10
+  _memcpy
+                                  00002475         0   none ,g         * 
+
+SECTION=.textf
+FILE=DefaultBuild\stkinit.obj
+                                  00002485  000024c8        44
+  _stkinit
+                                  00002485         0   none ,g         * 
+  LSTINIT1
+                                  00002493         0   none ,l         * 
+  LSTINIT2
+                                  000024bd         0   none ,l         * 
+  LSTINIT3
+                                  000024c8         0   none ,l         * 
+FILE=DefaultBuild\r_cg_main.obj
+                                  000024c9  000024d4         c
+  _main
+                                  000024c9         8   func ,g         * 
+  _R_MAIN_UserInit@1
+                                  000024d1         4   func ,l         * 
+FILE=DefaultBuild\r_cg_systeminit.obj
+                                  000024d5  0000254d        79
+  _R_Systeminit
+                                  000024d5        72   func ,g         * 
+  _hdwinit
+                                  00002547         7   func ,g         * 
+FILE=DefaultBuild\r_cg_cgc.obj
+                                  0000254e  00002593        46
+  _R_CGC_Create
+                                  0000254e        46   func ,g         * 
+FILE=DefaultBuild\r_cg_cgc_user.obj
+                                  00002594  0000259a         7
+  _R_CGC_Get_ResetSource
+                                  00002594         7   func ,g         * 
+FILE=DefaultBuild\r_cg_port.obj
+                                  0000259b  000025cb        31
+  _R_PORT_Create
+                                  0000259b        31   func ,g         * 
+FILE=DefaultBuild\r_cg_wdt.obj
+                                  000025cc  000025df        14
+  _R_WDT_Create
+                                  000025cc        10   func ,g         * 
+  _R_WDT_Restart
+                                  000025dc         4   func ,g         * 
+FILE=DefaultBuild\r_cg_sau.obj
+                                  000025e0  00002727       148
+  _R_SAU0_Create
+                                  000025e0        1a   func ,g         * 
+  _R_UART1_Create
+                                  000025fa        81   func ,g         * 
+  _R_UART1_Start
+                                  0000267b        28   func ,g         * 
+  _R_UART1_Stop
+                                  000026a3        1f   func ,g         * 
+  _R_UART1_Receive
+                                  000026c2        2c   func ,g         * 
+  _R_UART1_Send
+                                  000026ee        3a   func ,g         * 
+FILE=DefaultBuild\r_cg_sau_user.obj
+                                  00002728  00002733         c
+  _r_uart1_callback_receiveend@1
+                                  00002728         1   func ,l         * 
+  _r_uart1_callback_softwareoverrun@1
+                                  00002729         5   func ,l         * 
+  _r_uart1_callback_sendend@1
+                                  0000272e         1   func ,l         * 
+  _r_uart1_callback_error@1
+                                  0000272f         5   func ,l         * 
+FILE=DefaultBuild\r_cg_adc.obj
+                                  00002734  0000279a        67
+  _R_ADC_Create
+                                  00002734        40   func ,g         * 
+  _R_ADC_Start
+                                  00002774         a   func ,g         * 
+  _R_ADC_Stop
+                                  0000277e         a   func ,g         * 
+  _R_ADC_Set_OperationOn
+                                  00002788         4   func ,g         * 
+  _R_ADC_Set_OperationOff
+                                  0000278c         4   func ,g         * 
+  _R_ADC_Get_Result
+                                  00002790         b   func ,g         * 
+FILE=DefaultBuild\r_cg_it8bit.obj
+                                  0000279b  000027d3        39
+  _R_IT8Bit0_Channel0_Create
+                                  0000279b        23   func ,g         * 
+  _R_IT8Bit0_Channel0_Start
+                                  000027be         b   func ,g         * 
+  _R_IT8Bit0_Channel0_Stop
+                                  000027c9         b   func ,g         * 
+FILE=DefaultBuild\r_cg_tmkb.obj
+                                  000027d4  0000287d        aa
+  _R_TMR_KB_Create
+                                  000027d4        79   func ,g         * 
+  _R_TMR_KB0_Start
+                                  0000284d         f   func ,g         * 
+  _R_TMR_KB0_Stop
+                                  0000285c         e   func ,g         * 
+  _R_TMR_KB0_ForcedOutput_00_Start
+                                  0000286a         5   func ,g         * 
+  _R_TMR_KB0_ForcedOutput_00_Stop
+                                  0000286f         5   func ,g         * 
+  _R_TMR_KB0_ForcedOutput_01_Start
+                                  00002874         5   func ,g         * 
+  _R_TMR_KB0_ForcedOutput_01_Stop
+                                  00002879         5   func ,g         * 
+FILE=DefaultBuild\r_cg_dac.obj
+                                  0000287e  000028a6        29
+  _R_DAC0_Create
+                                  0000287e        10   func ,g         * 
+  _R_DAC0_Start
+                                  0000288e         4   func ,g         * 
+  _R_DAC0_Stop
+                                  00002892         4   func ,g         * 
+  _R_DAC0_Set_ConversionValue
+                                  00002896         7   func ,g         * 
+  _R_DAC_Set_PowerOff
+                                  0000289d         5   func ,g         * 
+  _R_DAC_Reset
+                                  000028a2         5   func ,g         * 
+FILE=DefaultBuild\r_cg_pga.obj
+                                  000028a7  000028d3        2d
+  _R_PGA_Create
+                                  000028a7        23   func ,g         * 
+  _R_PGA_Start
+                                  000028ca         5   func ,g         * 
+  _R_PGA_Stop
+                                  000028cf         5   func ,g         * 
+FILE=DefaultBuild\r_cg_comp.obj
+                                  000028d4  00002956        83
+  _R_COMP_Create
+                                  000028d4        54   func ,g         * 
+  _R_COMP0_Start
+                                  00002928        24   func ,g         * 
+  _R_COMP0_Stop
+                                  0000294c         b   func ,g         * 
+FILE=DefaultBuild\TETSU_CON_G11_user.obj
+                                  00002957  00003083       72d
+  _tetsu_con_g11_main
+                                  00002957       3fb   func ,g         * 
+  _advalue_get
+                                  00002d52        5b   func ,g         * 
+  _handle_step_set
+                                  00002dad        bf   func ,g         * 
+  _speed_set
+                                  00002e6c       128   func ,g         * 
+  _tmkb_set
+                                  00002f94        30   func ,g         * 
+  _tmkb_value_get
+                                  00002fc4        1a   func ,g         * 
+  _dcc_set
+                                  00002fde        96   func ,g         * 
+  _wait1us
+                                  00003074        10   func ,g         * 
+FILE=DefaultBuild\r_cg_dtc.obj
+                                  00003084  0000312e        ab
+  _R_DTC_Create
+                                  00003084        9b   func ,g         * 
+  _R_DTCD0_Start
+                                  0000311f         8   func ,g         * 
+  _R_DTCD0_Stop
+                                  00003127         8   func ,g         * 
+
+SECTION=.data
+FILE=DefaultBuild\r_cg_it8bit_user.obj
+                                  00003130  00003139         a
+FILE=DefaultBuild\r_cg_tmkb_user.obj
+                                  0000313a  0000313c         3
+FILE=DefaultBuild\TETSU_CON_G11_user.obj
+                                  0000313e  0000313e         1
+
+SECTION=.monitor2
+FILE=rlink_generates_02
+                                  00003e00  00003fff       200
+
+SECTION=.dataR
+FILE=DefaultBuild\r_cg_it8bit_user.obj
+                                  000ffa00  000ffa09         a
+  _timer_count@1@r_it8bit0_channel0_interrupt@1
+                                  000ffa00         2   data ,l         * 
+  _direction_sw_count@2@r_it8bit0_channel0_interrupt@1
+                                  000ffa02         2   data ,l         * 
+  _past_direction_sw@3@r_it8bit0_channel0_interrupt@1
+                                  000ffa04         1   data ,l         * 
+  _limit_sw_count@4@r_it8bit0_channel0_interrupt@1
+                                  000ffa06         2   data ,l         * 
+  _past_limit_sw@5@r_it8bit0_channel0_interrupt@1
+                                  000ffa08         1   data ,l         * 
+  _sound_count@6@r_it8bit0_channel0_interrupt@1
+                                  000ffa09         1   data ,l         * 
+FILE=DefaultBuild\r_cg_tmkb_user.obj
+                                  000ffa0a  000ffa0c         3
+  _preamble_count@1@r_tmr_kb0_interrupt@1
+                                  000ffa0a         1   data ,l         * 
+  _bitshift_count@2@r_tmr_kb0_interrupt@1
+                                  000ffa0b         1   data ,l         * 
+  _state@3@r_tmr_kb0_interrupt@1
+                                  000ffa0c         1   data ,l         * 
+FILE=DefaultBuild\TETSU_CON_G11_user.obj
+                                  000ffa0e  000ffa0e         1
+  _past_direction_flag@1@speed_set
+                                  000ffa0e         1   data ,l         * 
+
+SECTION=.bss
+FILE=DefaultBuild\r_cg_sau.obj
+                                  000ffa10  000ffa19         a
+  _gp_uart1_tx_address
+                                  000ffa10         2   data ,g         * 
+  _g_uart1_tx_count
+                                  000ffa12         2   data ,g         * 
+  _gp_uart1_rx_address
+                                  000ffa14         2   data ,g         * 
+  _g_uart1_rx_count
+                                  000ffa16         2   data ,g         * 
+  _g_uart1_rx_length
+                                  000ffa18         2   data ,g         * 
+FILE=DefaultBuild\TETSU_CON_G11_user.obj
+                                  000ffa1a  000ffa37        1e
+  _Timer_tick
+                                  000ffa1a         1   data ,g         * 
+  _Direction_sw
+                                  000ffa1b         1   data ,g         * 
+  _Limit_sw
+                                  000ffa1c         1   data ,g         * 
+  _Start_sound
+                                  000ffa1d         1   data ,g         * 
+  _Led_port
+                                  000ffa1e         c   data ,g         * 
+  _Allways_light_on_flag
+                                  000ffa2a         1   data ,g         * 
+  _Dcc_bit_pos
+                                  000ffa2b         1   data ,g         * 
+  _Dcc_address_byte
+                                  000ffa2c         1   data ,g         * 
+  _Dcc_first_data_byte
+                                  000ffa2d         1   data ,g         * 
+  _Dcc_second_data_byte
+                                  000ffa2e         1   data ,g         * 
+  _Dcc_third_data_byte
+                                  000ffa2f         1   data ,g         * 
+  _Dcc_error_byte
+                                  000ffa30         1   data ,g         * 
+  _Dcc_sending_preamble
+                                  000ffa31         1   data ,g         * 
+  _Dcc_sending_lock
+                                  000ffa32         1   data ,g         * 
+  _Dcc_mode
+                                  000ffa33         1   data ,g         * 
+  _Dcc_speed_control_mode
+                                  000ffa34         1   data ,g         * 
+  _Dcc_send_byte
+                                  000ffa35         1   data ,g         * 
+  _Dcc_speed
+                                  000ffa36         1   data ,g         * 
+  _Dcc_preamble_size
+                                  000ffa37         1   data ,g         * 
+
+SECTION=.bss_ATFFB00
+FILE=DefaultBuild\TETSU_CON_G11_user.obj
+                                  000ffb00  000ffbef        f0
+  _CR03_DAT
+                                  000ffb00        f0   data ,g         * 
+
+SECTION=.bss_ATFFC00
+FILE=DefaultBuild\TETSU_CON_G11_user.obj
+                                  000ffc00  000ffcef        f0
+  _CR12_DAT
+                                  000ffc00        f0   data ,g         * 
+
+SECTION=.bss_ATFFCF0
+FILE=DefaultBuild\TETSU_CON_G11_user.obj
+                                  000ffcf0  000ffcf0         1
+  _RDT_DAT
+                                  000ffcf0         1   data ,g         * 
+
+SECTION=.bss_ATFFD00
+FILE=DefaultBuild\r_cg_dtc.obj
+                                  000ffd00  000ffd27        28
+  _dtc_vectortable
+                                  000ffd00        28   data ,g         * 
+
+SECTION=.bss_ATFFD40
+FILE=DefaultBuild\r_cg_dtc.obj
+                                  000ffd40  000ffd47         8
+  _dtc_controldata_0
+                                  000ffd40         8   data ,g         * 
+
+SECTION=.bss_ATFFD48
+FILE=DefaultBuild\r_cg_dtc.obj
+                                  000ffd48  000ffd4f         8
+  _dtc_controldata_1
+                                  000ffd48         8   data ,g         * 
+
+SECTION=.bss_ATFFD50
+FILE=DefaultBuild\r_cg_dtc.obj
+                                  000ffd50  000ffd57         8
+  _dtc_controldata_2
+                                  000ffd50         8   data ,g         * 
+
+SECTION=.bss_ATFFD58
+FILE=DefaultBuild\r_cg_dtc.obj
+                                  000ffd58  000ffd5f         8
+  _dtc_controldata_3
+                                  000ffd58         8   data ,g         * 
+
+SECTION=.bss_ATFFD60
+FILE=DefaultBuild\r_cg_dtc.obj
+                                  000ffd60  000ffd67         8
+  _dtc_controldata_4
+                                  000ffd60         8   data ,g         * 
+
+Absolute value symbols
+FILE=rlink_generates_05
+  __s.text
+                                  00002052         0   none ,g         * 
+  __e.text
+                                  00002475         0   none ,g         * 
+  __s.textf
+                                  00002485         0   none ,g         * 
+  __e.textf
+                                  0000312f         0   none ,g         * 
+  __s.const
+                                  00002000         0   none ,g         * 
+  __e.const
+                                  00002052         0   none ,g         * 
+  __s.constf
+                                  00003130         0   none ,g         * 
+  __e.constf
+                                  00003130         0   none ,g         * 
+  __s.data
+                                  00003130         0   none ,g         * 
+  __e.data
+                                  0000313f         0   none ,g         * 
+  __s.sdata
+                                  00003140         0   none ,g         * 
+  __e.sdata
+                                  00003140         0   none ,g         * 
+  __s.bss
+                                  000ffa10         0   none ,g         * 
+  __e.bss
+                                  000ffa38         0   none ,g         * 
+  __s.sbss
+                                  000ffe20         0   none ,g         * 
+  __e.sbss
+                                  000ffe20         0   none ,g         * 
+  __s.dataR
+                                  000ffa00         0   none ,g         * 
+  __e.dataR
+                                  000ffa0f         0   none ,g         * 
+  __s.sdataR
+                                  000ffe20         0   none ,g         * 
+  __e.sdataR
+                                  000ffe20         0   none ,g         * 
+  __s.RLIB
+                                  00002475         0   none ,g         * 
+  __e.RLIB
+                                  00002485         0   none ,g         * 
+  __s.SLIB
+                                  00002485         0   none ,g         * 
+  __e.SLIB
+                                  00002485         0   none ,g         * 
+  __s.bss_ATFFB00
+                                  000ffb00         0   none ,g         * 
+  __e.bss_ATFFB00
+                                  000ffbf0         0   none ,g         * 
+  __s.bss_ATFFC00
+                                  000ffc00         0   none ,g         * 
+  __e.bss_ATFFC00
+                                  000ffcf0         0   none ,g         * 
+  __s.bss_ATFFCF0
+                                  000ffcf0         0   none ,g         * 
+  __e.bss_ATFFCF0
+                                  000ffcf1         0   none ,g         * 
+  __s.bss_ATFFD00
+                                  000ffd00         0   none ,g         * 
+  __e.bss_ATFFD00
+                                  000ffd28         0   none ,g         * 
+  __s.bss_ATFFD40
+                                  000ffd40         0   none ,g         * 
+  __e.bss_ATFFD40
+                                  000ffd48         0   none ,g         * 
+  __s.bss_ATFFD48
+                                  000ffd48         0   none ,g         * 
+  __e.bss_ATFFD48
+                                  000ffd50         0   none ,g         * 
+  __s.bss_ATFFD50
+                                  000ffd50         0   none ,g         * 
+  __e.bss_ATFFD50
+                                  000ffd58         0   none ,g         * 
+  __s.bss_ATFFD58
+                                  000ffd58         0   none ,g         * 
+  __e.bss_ATFFD58
+                                  000ffd60         0   none ,g         * 
+  __s.bss_ATFFD60
+                                  000ffd60         0   none ,g         * 
+  __e.bss_ATFFD60
+                                  000ffd68         0   none ,g         * 
+  __s.option_byte
+                                  000000c0         0   none ,g         * 
+  __e.option_byte
+                                  000000c4         0   none ,g         * 
+  __s.monitor1
+                                  000000ce         0   none ,g         * 
+  __e.monitor1
+                                  000000d8         0   none ,g         * 
+  __s.monitor2
+                                  00003e00         0   none ,g         * 
+  __e.monitor2
+                                  00004000         0   none ,g         * 
+  __s.security_id
+                                  000000c4         0   none ,g         * 
+  __e.security_id
+                                  000000ce         0   none ,g         * 
+  __s.vect
+                                  00000000         0   none ,g         * 
+  __e.vect
+                                  00000080         0   none ,g         * 
+  __RAM_ADDR_START
+                                  000ff900         0   none ,g         * 
+  __RAM_ADDR_END
+                                  000ffee0         0   none ,g         * 
+  __STACK_ADDR_START
+                                  000ffa00         0   none ,g         * 
+  __STACK_ADDR_END
+                                  000ff900         0   none ,g         * 
+
+*** Unfilled Areas ***
+
+AREA                                START    END
+
+*** Delete Symbols ***
+
+SYMBOL                                SIZE    INFO

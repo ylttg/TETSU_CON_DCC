@@ -1,0 +1,55 @@
+-Input=DefaultBuild\cstart.obj
+-Input=DefaultBuild\stkinit.obj
+-Input=DefaultBuild\r_cg_main.obj
+-Input=DefaultBuild\r_cg_systeminit.obj
+-Input=DefaultBuild\r_cg_cgc.obj
+-Input=DefaultBuild\r_cg_cgc_user.obj
+-Input=DefaultBuild\r_cg_port.obj
+-Input=DefaultBuild\r_cg_port_user.obj
+-Input=DefaultBuild\r_cg_wdt.obj
+-Input=DefaultBuild\r_cg_wdt_user.obj
+-Input=DefaultBuild\r_cg_sau.obj
+-Input=DefaultBuild\r_cg_sau_user.obj
+-Input=DefaultBuild\r_cg_adc.obj
+-Input=DefaultBuild\r_cg_adc_user.obj
+-Input=DefaultBuild\r_cg_it8bit.obj
+-Input=DefaultBuild\r_cg_it8bit_user.obj
+-Input=DefaultBuild\r_cg_tmkb.obj
+-Input=DefaultBuild\r_cg_tmkb_user.obj
+-Input=DefaultBuild\r_cg_dac.obj
+-Input=DefaultBuild\r_cg_dac_user.obj
+-Input=DefaultBuild\r_cg_pga.obj
+-Input=DefaultBuild\r_cg_pga_user.obj
+-Input=DefaultBuild\r_cg_comp.obj
+-Input=DefaultBuild\r_cg_comp_user.obj
+-Input=DefaultBuild\TETSU_CON_G11_user.obj
+-Input=DefaultBuild\r_cg_dtc.obj
+-Input=DefaultBuild\r_cg_dtc_user.obj
+-SECURITY_ID=00000000000000000000
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F1056A.DVF
+-DEBug
+-NOCOmpress
+-NOOPtimize
+-OUtput=DefaultBuild\TETSU_CON_G11.abs
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\lib\rl78em4s.lib
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\lib\malloc_n.lib
+-LIBrary=C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\lib\rl78em4r.lib
+-OCDBG=84
+-DEBUG_MONITOR=3E00-3FFF
+-USER_OPT_BYTE=FE57F0
+-LISt=DefaultBuild\TETSU_CON_G11.map
+-SHow=SYmbol,Total_size
+-STARt=.const,.text,.RLIB,.SLIB,.textf,.constf,.data,.sdata/02000,.dataR,.bss/FFA00,.sdataR,.sbss/FFE20
+-ROm=.data=.dataR
+-ROm=.sdata=.sdataR
+-NOMessage
+-MEMory=High
+-NOLOgo
+-end
+-Input=DefaultBuild\TETSU_CON_G11.abs
+-DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F1056A.DVF
+-OUtput=DefaultBuild\TETSU_CON_G11.mot
+-FOrm=Stype
+-NOMessage
+-exit
+
